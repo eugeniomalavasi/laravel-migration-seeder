@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 
 class TrainController extends Controller
 {
-    public function index()
-    {
-        $trainList = Train::all();
-        dd($trainList);
 
-        return view('home');
+    public function index() {
+        $trainList = Train::all();
+        // dd($trainList);
+
+        return view('home', compact('trainList'));
     }
 }

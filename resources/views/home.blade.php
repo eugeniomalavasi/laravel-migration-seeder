@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Home page</h1>
+@foreach ($trainList as $train)
+    
+@endforeach
+    <h1>{{$train->departure_station}}</h1>
 @endsection
