@@ -24,15 +24,15 @@
                 <td>{{ $train->carriage_number }}</td>
                 
                 @if ($train->is_on_time === 1)
-                <td> <i class="fa-solid fa-square-xmark"></i> </td>
+                <td class="text-danger"> <i class="fa-solid fa-square-xmark"></i> </td>
                 @else
-                <td><i class="fa-solid fa-square-check"></i></td>
+                <td class="text-success"><i class="fa-solid fa-square-check"></i></td>
                 @endif
 
                 @if ($train->canceled === 1)
-                <td> <i class="fa-solid fa-square-xmark"></i> </td>
+                <td class="text-danger"> <i class="fa-solid fa-square-xmark"></i> </td>
                 @else
-                <td><i class="fa-solid fa-square-check"></i></td>
+                <td class="text-success"><i class="fa-solid fa-square-check"></i></td>
                 @endif
             </tr>
         </tbody>
