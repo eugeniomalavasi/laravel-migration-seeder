@@ -1,4 +1,4 @@
-<table class="table">
+<table class="table text-center">
     <thead>
         <tr>
             <th scope="col">Numero treno</th>
@@ -22,17 +22,17 @@
                 <td>{{ $train->departure_time }}</td>
                 <td>{{ $train->arrival_time }}</td>
                 <td>{{ $train->carriage_number }}</td>
-                
+
                 @if ($train->is_on_time === 1)
-                <td class="text-danger"> <i class="fa-solid fa-square-xmark"></i> </td>
+                    <td class="text-danger"> <i class="fa-solid fa-square-xmark"></i> </td>
                 @else
-                <td class="text-success"><i class="fa-solid fa-square-check"></i></td>
+                    <td class="text-success"><i class="fa-solid fa-square-check"></i></td>
                 @endif
 
                 @if ($train->canceled === 1)
-                <td class="text-danger"> <i class="fa-solid fa-square-xmark"></i> </td>
+                    <td class="text-danger"> <i class="fa-solid fa-square-xmark"></i> </td>
                 @else
-                <td class="text-success"><i class="fa-solid fa-square-check"></i></td>
+                    <td class="text-success"><i class="fa-solid fa-square-check"></i></td>
                 @endif
             </tr>
         </tbody>
