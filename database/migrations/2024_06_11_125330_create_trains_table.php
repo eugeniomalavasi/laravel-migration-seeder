@@ -21,7 +21,7 @@ return new class extends Migration
             $table->smallInteger('train_number')->unsigned();
             $table->tinyInteger('carriage_number')->unsigned();
             $table->boolean('is_on_time')->default(false);
-            $table->boolean('canceled')->default(false);
+            $table->boolean('canceled')->default(true);
             $table->timestamps();
         });
     }
